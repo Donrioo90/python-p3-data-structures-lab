@@ -28,7 +28,9 @@ def print_spicy_foods(spicy_foods):
         print(f'{food["name"]} ({food["cuisine"]}) | Heat Level: {heat}')
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine):
-    pass
+    for food in spicy_foods:
+        if food["cuisine"] == cuisine:
+            return food
 
 def print_spiciest_foods(spicy_foods):
     pass
